@@ -3,11 +3,11 @@ ALGORITHM
 1.start
 2.take float totaldistance,mileage,fuelprice
 3.take float fuelrequired,totalfuelcost
-5.read totaldistance,mileage,fuelprice
-6.fuelrequired = totaldistance/mileage
-7.totalfuelcost = fuelrequired*fuelprice
-8.print the fuelrequired,totalfuelcost
-9.stop
+4.read totaldistance,mileage,fuelprice
+5.fuelrequired = totaldistance/mileage
+6.totalfuelcost = fuelrequired*fuelprice
+7.print the fuelrequired,totalfuelcost
+8.stop
 
 PROGRAM:
 #include<stdio.h>
