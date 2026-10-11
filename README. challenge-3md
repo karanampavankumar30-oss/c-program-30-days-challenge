@@ -3,6 +3,16 @@ kilometres. Determine the discount and delivery charge using conditional stateme
 charge, and final payable amount.
 ALGORITHM:
 program:
+1. start
+2. read the input values
+3. double discountprice,discount,afterdiscount,deliverycharge,finalpayableamount
+4.double purchase,distance
+5.int customertype
+6. check the statement type
+7. enter the discount according to the type
+8. caluculate the discount,afterdiscount,payableamount
+9. print the display the discount,deliverycharge,finalpayableamount
+10. stop
 #include <stdio.h>
 int main()
 {
