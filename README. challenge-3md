@@ -1,1 +1,54 @@
+statement: A student is purchasing items from an online store. Read the purchase amount, customer type (1 = Student, 2 = Regular Customer),and delivery distance in 
+kilometres. Determine the discount and delivery charge using conditional statements.Display the purchase amount, discount amount, amount after discount, delivery 
+charge, and final payable amount.
+ALGORITHM:
+program:
+#include <stdio.h>
+int main()
+{
+double purchase,distance;
+double discountprice,discount,afterdiscount,deliverycharge,finalpayableamount;
+int customertype;
+printf("enter the purchase: ");
+scanf("%lf", &purchase);
+printf("enter customertype (1=student,2=regural): ");
+scanf("%d", &customertype );
+printf("enter the delivery distance in km: ");
+scanf("%lf", &distance);
 
+if(customertype == 1)
+{
+if(purchase >= 2000)
+ discountprice=0.15;
+else
+ discountprice=0.10;
+}
+else if(customertype == 2)
+{
+if(purchase >= 3000)
+ discountprice=0.08;
+else
+discountprice = 0.00;
+}
+else
+{
+printf("invalid customer type.\n");
+return 1;
+}
+if (distance <= 5)
+ deliverycharge = 40;
+else if (distance <= 15)
+  deliverycharge = 70;
+else
+deliverycharge = 100;
+
+discount = purchase * discountprice;
+afterdiscount = purchase - discount;
+finalpayableamount = afterdiscount + deliverycharge;
+printf("purchase amount: Rs. %.2f\n",purchase);
+printf("discount amount: Rs. %.2f\n",discount);
+printf("amount after discount: Rs. %.2f\n",afterdiscount);
+printf("delivery charge: Rs. %.2f\n",deliverycharge);
+printf("finalpayableamount: Rs. %.2f\n",finalpayableamount);
+return 0;
+}
