@@ -47,7 +47,7 @@ break;
 
 case 3:
 printf("enter a,b,c :");
-scanf("%f,%f,%f",&a,&b,&c);
+scanf("%f%f%f",&a,&b,&c);
 
 if(a==0)
 printf("it is not a quadratic equation \n ");
